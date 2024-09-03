@@ -1408,23 +1408,6 @@ label {
   text-align: justify;
 }
 
-.news-banner {
-  height: 20vw;
-  width: 100%;
-  background-image: url('../images/news-bg.jpg');
-  background-size: cover;
-  background-position: start center;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: #ccc;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.595);
-  text-align: center;
-}
-
 .news-banner h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
