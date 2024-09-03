@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import SideNavBar from '../components/SideNavBar';
-import Footer from '../components/Footer';
 import ActionCarousel from '../components/ActionsCarousel';
 import LazyLoad from 'react-lazyload';
 import { getActionsData2020, getActionsData2021, getActionsData2022, getActionsData2023 } from '../services/request';
-import { Chart } from "react-google-charts";
 import Loading from '../components/Loading';
 
 function Observatory() {
