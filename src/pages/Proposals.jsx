@@ -15,7 +15,7 @@ function Proposals() {
         <h1>Nossas Propostas</h1>
         <div className="proposals-card">
           {dataProposals.map((proposal, index) => {
-            return (<div><a href={`./propostas/${index}`}>{proposal.title}</a></div>)
+            return (<h4><a href={`./propostas/${index}`}>{proposal.title}</a></h4>)
           })}
         </div>
       </div>
