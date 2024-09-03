@@ -1025,12 +1025,13 @@ function Observatory() {
                   <h1><AnimatedNumber initialValue={0} finalValue={182.3} duration={500} /> Bi</h1>
                   <h3>Valor orçado em ações sustentáveis:</h3>
                   <h3>R$ <AnimatedNumber initialValue={0} finalValue={
-                    182299449} duration={1000} /></h3>
+                    182299449} duration={2000} /></h3>
                 </LazyLoad>
               </div>
               <div className="value-card display-flex-center bad-value">
                 <LazyLoad height={400} offset={500}>
-                  <h1>386.9 Bi</h1>
+                  <h1><AnimatedNumber initialValue={0} finalValue={
+                    386.9} duration={4000} /> Bi</h1>
                   <h3>Total investido em ações NÃO sustentáveis:</h3>
                   <h3>R$ 386.881.624</h3>
                 </LazyLoad>
@@ -1050,7 +1051,7 @@ function Observatory() {
             <div className="data-cards fade-in">
               <div className="value-card display-flex-center">
                 <LazyLoad height={400} offset={0}>
-                  <h1><AnimatedNumber initialValue={0} finalValue={182.3} duration={500} /> Bi</h1>
+                  <h1><AnimatedNumber initialValue={0} finalValue={182.3} duration={2000} /> Bi</h1>
                   <h3>Valor Orçado</h3>
                   <h3>R$ 182.299.449</h3>
                 </LazyLoad>
@@ -1122,9 +1123,9 @@ function Observatory() {
             <nav className='observatory-docs'>
               <div>
                 <h1>Documentos Orçamentários</h1><br />
-                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/718e6705-a7e1-4395-a7c5-13c141c182f7" target="_blank" rel="noopener noreferrer">Despesas orçamentárias 2020 - Portal de Dados Abertos de Pernambuco</a><br /><br />
-                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/df6d4a2a-7f78-4f98-a38b-8cf74b7823d7" target="_blank" rel="noopener noreferrer">Despesas orçamentárias 2021 - Portal de Dados Abertos de Pernambuco</a><br /><br />
-                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/a4b97fb4-7dc6-4e70-a87d-3c3503f00b1e">Despesas orçamentárias 2022 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/718e6705-a7e1-4395-a7c5-13c141c182f7" target="_blank" rel="noopener noreferrer">Despesas orçamentárias 2021 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/df6d4a2a-7f78-4f98-a38b-8cf74b7823d7" target="_blank" rel="noopener noreferrer">Despesas orçamentárias 2022 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/a4b97fb4-7dc6-4e70-a87d-3c3503f00b1e">Despesas orçamentárias 2023 - Portal de Dados Abertos de Pernambuco</a><br /><br />
                 <a href="http://dados.recife.pe.gov.br/dataset/despesas-orcamentarias/resource/6e5be9b8-7fe3-4831-abb2-44817d2f5417" target="_blank" rel="noopener noreferrer">Despesas Totais 2024 - Portal de Dados Abertos de Pernambuco</a><br /><br />
               </div>
               <div>
@@ -1135,9 +1136,9 @@ function Observatory() {
               </div>
               <div>
                 <h1>Baixe os Dados</h1><br />
-                <a href="http://dados.recife.pe.gov.br/datastore/dump/df6d4a2a-7f78-4f98-a38b-8cf74b7823d7?bom=True">(CSV) Despesas orçamentárias 2020 - Portal de Dados Abertos de Pernambuco</a><br /><br />
-                <a href="http://dados.recife.pe.gov.br/datastore/dump/ea074e10-46a1-46a4-a2a4-47d1b331544d?bom=True" target="_blank" rel="noopener noreferrer">(CSV) Despesas orçamentárias 2021 - Portal de Dados Abertos de Pernambuco</a><br /><br />
-                <a href="http://dados.recife.pe.gov.br/datastore/dump/a4b97fb4-7dc6-4e70-a87d-3c3503f00b1e?bom=True">(CSV) Despesas orçamentárias 2022 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/datastore/dump/df6d4a2a-7f78-4f98-a38b-8cf74b7823d7?bom=True">(CSV) Despesas orçamentárias 2021 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/datastore/dump/ea074e10-46a1-46a4-a2a4-47d1b331544d?bom=True" target="_blank" rel="noopener noreferrer">(CSV) Despesas orçamentárias 2022 - Portal de Dados Abertos de Pernambuco</a><br /><br />
+                <a href="http://dados.recife.pe.gov.br/datastore/dump/a4b97fb4-7dc6-4e70-a87d-3c3503f00b1e?bom=True">(CSV) Despesas orçamentárias 2023 - Portal de Dados Abertos de Pernambuco</a><br /><br />
                 <a href="http://dados.recife.pe.gov.br/datastore/dump/6e5be9b8-7fe3-4831-abb2-44817d2f5417?bom=True" target="_blank" rel="noopener noreferrer">(CSV) Despesas Totais 2024 - Portal de Dados Abertos de Pernambuco</a><br /><br />
               </div>
               <div>
