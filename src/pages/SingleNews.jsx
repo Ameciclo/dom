@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function SingleNews() {
+function SingleNews(props) {
   const { id } = useParams();
 
   const dataNew = [

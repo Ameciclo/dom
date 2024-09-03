@@ -12,8 +12,6 @@ function Header(props) {
     if (page_name === props.page) return "nav-active"
   }
 
-  console.log(navBarListOn);
-
   const navIsActive = (page, href) => {
     if (page === href) return "nav-active";
   }
@@ -76,7 +74,17 @@ function Header(props) {
         }
         
       </header>
-      <div className={`fade-in cover ${props.page !== "/" ? props.page.replace("/", "") : "inicial"}-cover`}></div>
+      <div
+  className={`fade-in cover ${
+    props.page !== "/"
+      ? /^(\/propostas\/\d+)$/.test(props.page)
+        ? "propostas"
+        : /^(\/noticias\/\d+)$/.test(props.page)
+        ? "noticias"
+        : props.page.replace("/", "")
+      : "inicial"
+  }-cover`}
+></div>
     </>
   );
 }
