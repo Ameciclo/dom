@@ -240,7 +240,7 @@ a {
   background-color: rgba(7, 255, 152, 0);
   justify-content: space-around;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
-  background-position: right;
+  background-position: center;
 }
 
 .inicial-cover {
