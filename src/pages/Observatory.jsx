@@ -243,11 +243,11 @@ function Observatory() {
               legendToggle
             /><br /><br /><br /><br />
 
-            <h1 className="observatory-titles">Ações COLABORATIVAS</h1>
+            <h1 className="observatory-titles">Ações Sustentáveis</h1>
             <LazyLoad height={400} offset={0}>
               <ActionCarousel actions={totalGoodActions} actionType='good-action' />
             </LazyLoad>
-            <h1 className="observatory-titles">Ações DEGRADANTES</h1>
+            <h1 className="observatory-titles">Ações Não Sustentáveis</h1>
             <LazyLoad height={400} offset={0}>
               <ActionCarousel
                 actionType='bad-action'
