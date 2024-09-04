@@ -1499,15 +1499,12 @@ label {
 }
 
 .news-text {
+  width: 100%;
   margin-top: 50px;
   font-size: 1.1em;
-  /* Tamanho de fonte confortável para leitura */
   line-height: 1.8;
-  /* Melhora o espaçamento entre linhas */
   color: #444;
-  /* Cor do texto um pouco mais clara */
   margin-bottom: 30px;
-  /* Espaçamento abaixo do parágrafo */
   text-align: justify;
   white-space: pre-line;
 }
