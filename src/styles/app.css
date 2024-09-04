@@ -825,6 +825,10 @@ aside a {
   margin-bottom: 20px;
 }
 
+.news-img {
+  width: 50%;
+}
+
 .contact-icon {
   width: 200px;
   transition: transform 1s ease;
@@ -1505,6 +1509,7 @@ label {
   margin-bottom: 30px;
   /* Espaçamento abaixo do parágrafo */
   text-align: justify;
+  white-space: pre-line;
 }
 
 .news-text div span {
@@ -1765,6 +1770,9 @@ label {
 }
 
 @media (max-width: 1000px) {
+  .news-img {
+    width: 100%;
+  }
   .cover {
     height: 12em;
   }

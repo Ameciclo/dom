@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import header_image from "../images/carta_compromisso.png"
 import { newsApi } from '../services/request';
+import newsImage from "../images/news00.png"
 
 
 function News() {
@@ -35,7 +36,20 @@ function News() {
               Atenciosamente,
               Equipe Ameciclo</p>
           </div>
+        </a><br />
+        <a href={`/noticias/1`} className='news-card'>
+          <img src={newsImage} alt="" />
+          <div className='news-card-text'>
+            <span>03/09/24</span>
+            <div className='news-card-title'>
+              <h1>Semana da Mobilidade 2024</h1>
+            </div>
+            <p>Prepare-se para a Semana da Mobilidade 2024!
+Vamos celebrar o Dia Mundial Sem Carro, participar do Desafio Intermodal, e muito mais!
+Vamos transformar a mobilidade urbana em Recife.</p>
+          </div>
         </a>
+        <a href='/noticias'>Todas as notícias</a>
       </div>
     </main>
   );
