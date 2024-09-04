@@ -177,14 +177,13 @@ function Observatory() {
                 </LazyLoad>
               </div>
             </div><br /><br />
-            <h1 className='observatory-titles'>Gráfico de projeção de valores orçados em boas e más ações sustentáveis entre 2021 e 2024</h1><br />
+            <h1 className='observatory-titles'>Gráfico de projeção de valores orçados em boas e más ações sustentáveis em 2021, 2023 e 2024</h1><br />
             <Chart
               chartType="Bar"
               data={
                 [
                   ["Ano", "Sustentável (R$)", 'Não sustentável (R$)'],
                   ['2021', 111884449, 75073016],
-                  ['2022', 0, 0],
                   ['2023', 11315000, 171801000],
                   ['2024', 35175000, 148715000],
                 ]
@@ -193,20 +192,19 @@ function Observatory() {
               height="400px"
               options={{
                 chart: {
-                  subtitle: "Valores totais (R$) de orçados entre 2021 e 2024",
+                  subtitle: "Valores totais (R$) de orçados em 2021, 2023 e 2024",
                 },
               }}
               legendToggle
             /><br /><br />
 
-            <h1 className='observatory-titles'>Gráfico de projeção de valores orçados em boas ações sustentáveis no Município entre 2021 e 2024</h1><br />
+            <h1 className='observatory-titles'>Gráfico de projeção de valores orçados em boas ações sustentáveis no Município em 2021, 2023 e 2024</h1><br />
             <Chart
               chartType="Bar"
               data={
                 [
                   ["Ano", "Orçado em boas ações"],
                   ['2021', 111884449],
-                  ['2022', 0],
                   ['2023', 11315000],
                   ['2024', 35175000],
                 ]
@@ -215,20 +213,19 @@ function Observatory() {
               height="400px"
               options={{
                 chart: {
-                  subtitle: "Valores totais (R$) orçados entre 2021 e 2024",
+                  subtitle: "Valores totais (R$) orçados em 2021, 2023 e 2024",
                 },
               }}
               legendToggle
             /><br /><br />
 
-            <h1 className='observatory-titles'>Gráfico de projeção de gastos totais no Município entre 2021 e 2024</h1><br />
+            <h1 className='observatory-titles'>Gráfico de projeção de gastos totais no Município em 2021, 2023 e 2024</h1><br />
             <Chart
               chartType="Bar"
               data={
                 [
                   ["Ano", "Total Boas/Más"],
                   ['2021', 186957465],
-                  ['2022', 0],
                   ['2023', 183116000],
                   ['2024', 183890000],
                 ]
@@ -237,7 +234,7 @@ function Observatory() {
               height="400px"
               options={{
                 chart: {
-                  subtitle: "Valor total (R$) gasto entre 2021 e 2024",
+                  subtitle: "Valor total (R$) gasto em 2021, 2023 e 2024",
                 },
               }}
               legendToggle
