@@ -3,27 +3,6 @@ import React from 'react';
 const ActionsCarousel = ({ actions, actionType = '' }) => {
   const numParse = (numero) => numero.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
 
-  function catchActionCode(texto) {
-    const regex = /^(\d+) - /;
-    const match = texto.match(regex);
-    if (match) return match[1];
-    return '(sem código)';
-  }
-
-  function catchActionTitle(texto) {
-    const regex = /^(\d+) - (.+)$/;
-    const match = texto.match(regex);
-    if (match) return match[2];
-    return '(sem titulo)';
-  }
-
-  function catchSubactionTitle(texto) {
-    const regex = / - (.+)/;
-    const match = texto.match(regex);
-    if (match && match[1]) return match[1];
-    return '(sem titulo)';
-  }
-
   return (
     <div className="carousel-container fade-in">
       <div
@@ -35,16 +14,13 @@ const ActionsCarousel = ({ actions, actionType = '' }) => {
       >
         {actions.map((action, index) => (
           <div className={`${actionType} action-card`} key={index}>
-            <h3>Ação {catchActionCode(action.cd_nm_acao)}</h3>
+            <h3>Ação {action.cod} | Subação {action.subcod}</h3>
             <span>VALOR TOTAL ATUALIZADO</span>
-            <h2>R$ {numParse(action.vlrdotatualizada)}</h2>
-            <span>NOME DA AÇÃO</span>
-            <p>{catchActionTitle(action.cd_nm_acao)}</p>
-            <span>SUBAÇÃO</span>
-            <p>{catchSubactionTitle(action.cd_nm_subacao)}</p>
-            <span>FUNÇÃO E SUBFUNÇÃO</span>
-            <p>{catchActionTitle(action.cd_nm_funcao)}</p>
-            <p>{catchActionTitle(action.cd_nm_subfuncao)}</p>
+            <h2>R$ {numParse(action.total)}</h2>
+            <span>Título da Ação</span>
+            <p>{action.name}</p>
+            <span>Título da Subação</span>
+            <p>- {action.subname}</p>
           </div>
         ))}
       </div>
