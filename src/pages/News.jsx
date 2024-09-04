@@ -25,7 +25,7 @@ function News() {
         <a href={`/noticias/0`} className='news-card'>
           <img src={header_image} alt="" />
           <div className='news-card-text'>
-            <span>01/09/24</span>
+            <span>01 de setembro de 2024</span>
             <div className='news-card-title'>
               <h1>Lançamento da Carta de Compromisso 2024</h1>
             </div>
@@ -40,7 +40,7 @@ function News() {
         <a href={`/noticias/1`} className='news-card'>
           <img src={newsImage} alt="" />
           <div className='news-card-text'>
-            <span>03/09/24</span>
+            <span>03 de setembro de 2024</span>
             <div className='news-card-title'>
               <h1>Semana da Mobilidade 2024</h1>
             </div>
